@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ERP System Janak</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+    <%= javascript_importmap_tags %>
+</head>
+<body>
+    <header>
+        <%= render 'shared/header' %>
+    </header>
+
+    <main>
+        <%= yield %>
+    </main>
+
+    <footer>
+        <!-- <%= render 'shared/footer' %> -->
+    </footer>
+</body>
+</html>

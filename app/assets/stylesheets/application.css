@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header, .footer {
+    background-color: #002147;
+    color: white;
+    padding: 20px 0;
+}
+.header .container, .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header .logo, .footer p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.header .nav-links, .footer .social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+.header .nav-links li, .footer .social-links li {
+    display: inline;
+}
+.header .nav-links a, .footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+.header .nav-links a:hover, .footer .social-links a:hover {
+    color: #00d4ff;
+}
+.header .cta {
+    background-color: #00d4ff;
+    color: #002147;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header .cta:hover {
+    background-color: #00a3cc;
+}
